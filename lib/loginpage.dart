@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:frontend_msngr/signup.dart';
+import 'package:frontend_msngr/auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   final usernameController = TextEditingController();
+
   final passwordController = TextEditingController();
 
   @override
@@ -49,6 +58,14 @@ class LoginPage extends StatelessWidget {
                   onPressed: (){
                     print(usernameController.text);
                     print(passwordController.text);
+                    try {
+                        Auth().signInWithEmailAndPassword(email: usernameController.text, password: passwordController.text);
+
+                    } on FirebaseAuthException catch (e) {
+                      setState(() {
+                        print(e.message);
+                      });
+                    }
                   },
                   child: Text("Submit", style: TextStyle(color: Colors.white))),
               const SizedBox(height: 20),

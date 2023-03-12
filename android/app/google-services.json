@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "72207922701",
+    "project_id": "messageapp-acf7a",
+    "storage_bucket": "messageapp-acf7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72207922701:android:938b764a9c038c6ddd4744",
+        "android_client_info": {
+          "package_name": "com.example.frontend_msngr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72207922701-hb4hd883fbd8gs0gs91js9mvv91oeva5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgdo_NnYUjdm_3gl6Q3xffLByhhXW32No"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72207922701-hb4hd883fbd8gs0gs91js9mvv91oeva5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
